@@ -1020,3 +1020,15 @@ dialog > p { margin: 14px 0 0; font-size: 13px; color: #cbd5e1; }
   .review-card p { min-height: 0; }
   .google-rating { gap: 8px; }
 }
+
+/* Contact details in the open space beside the enquiry form */
+.contact-details { display: grid; gap: 18px; margin-top: 34px; max-width: 560px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 13px; width: fit-content; color: #94a3b8; font-size: 14px; line-height: 1.7; transition: color .25s ease, transform .25s ease; }
+.contact-detail > svg:first-child { flex: 0 0 auto; margin-top: 2px; color: var(--blue); }
+.contact-detail > svg:last-child { flex: 0 0 auto; margin-top: 3px; opacity: .7; }
+.contact-detail:hover { color: #fff; transform: translateX(3px); }
+.contact-instagram { align-items: center; color: var(--blue); }
+.hero-location { display: inline-flex; align-items: center; gap: 8px; color: inherit; transition: color .2s ease; }
+.hero-location:hover { color: var(--blue); }
+.hero-location:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+@media(max-width: 720px) { .contact-details { margin-top: 26px; } .contact-detail { font-size: 13px; } }
